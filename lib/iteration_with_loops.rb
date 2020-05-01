@@ -9,12 +9,12 @@ def join_nested_strings(src)
     while column_index < src[row_index].length do 
       if src[row_index][column_index].instance_of? String 
         words += (src[row_index][column_index] + " ")
-        #p src[row_index][column_index]
+       
       end 
       column_index +=1 
     end 
     row_index +=1 
   end 
-  # words = words.flatten
+  
   return words
 end
