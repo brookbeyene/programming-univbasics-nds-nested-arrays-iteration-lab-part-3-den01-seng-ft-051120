@@ -8,7 +8,7 @@ def join_nested_strings(src)
     column_index = 0 
     while column_index < src[row_index].length do 
       if src[row_index][column_index].instance_of? String 
-        words += (src[row_index][column_index])
+        words += (src[row_index][column_index] + " ")
         #p src[row_index][column_index]
       end 
       column_index +=1 
